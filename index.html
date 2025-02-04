@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking.com| Official site | the best cars,flights rentals &</title>
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            margin:0;
+        }
+        .container{
+       display: flex;
+       flex-direction: column;
+        width:100%;
+        height: 363px;
+        grid-template-columns: auto 1fr;
+        background-color:rgb(4, 81, 196);
+        overflow: hidden;
+         
+        }
+       .header{
+        width:100%;
+        height: 60px;
+        display: flex;
+       }
+       .nav-sec-1{
+        width:50%;
+        height:60px;
+       }
+       .nav-sec-2{
+        width:50%;
+        height:60px;
+         justify-content: space-around;
+         align-items: center;
+       }
+       #logo{
+        padding-left: 90px;
+        padding-top: 15px;
+       
+       }
+      a{
+        color: white;
+      }
+      .nav-sec-2{
+        display: flex;
+      }
+      #flag{
+        width:20px;
+        height: 20px;
+      border-radius: 50%;
+      }
+      .navbar-main2{
+        width:67%;
+        height: 60px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-left: 40p;
+        border: 1px solid bla;
+      }
+      button{
+        color: white;
+      }
+      #button1:hover{
+        background-color: rgb(47, 114, 214);
+      }
+      .find{
+        width: 90%;
+        height:600%;
+      }
+      .word{
+padding-left: 80px;
+padding-top: 65px;
+color: white;
+      }
+      .word-2{
+        padding-left: 80px;
+    color: white;
+      }
+      .section{
+        width:90%;
+        height:30px;
+        margin-left: 80px;
+    position: relative;
+      }
+      .input{
+        display: grid;
+        height: 54px;
+        border: 2px solid rgba(248, 171, 0, 0.977);
+        grid-template-columns: 1fr 1fr 1fr 100px;
+        border-radius: 10px;
+        position: relative;
+        bottom: 30px;
+        background-color:rgba(248, 171, 6, 0.977);
+        align-items: center;
+      }
+      #search{
+        height:48px;
+        border:3px solid rgba(212, 157, 38, 0.644);
+        background-color: white;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: auto 1fr;
+
+      }
+#search-bar-logo{
+    width:50px;
+    height:43px ;
+    align-content: center;
+    background-color: white;
+padding-left: 10px;
+border-radius: 10px;
+justify-content: center;
+
+      }
+     
+   #where{
+    width: 190px;
+    height: 40px;
+   
+   }
+#calender{
+    height:49px;
+    border:3px solid rgba(255, 196, 3, 0.89);
+    background-color: white;
+    border-radius: 10px;
+    padding-left:10px ;
+  
+      }
+
+#people{
+    height:49px;
+    border:3px solid rgba(243, 167, 4, 0.644);
+    background-color: white;
+    border-radius: 10px;
+      }
+
+#worldwide{
+  display:grid;
+  width:80%;
+  height:150px;
+  margin-left: 80px;
+  margin-bottom:60px;
+}
+.imgg-de{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows:1fr 1fr;
+  gap:20px;
+  
+}
+
+.main-destination{
+ margin:0 7%;
+           
+}
+.imgg-de img{
+width:100%;
+ height:300px;
+          }
+      
+      .names-des {
+        text-align: center;
+        color: white;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 5px;
+        border-radius: 5px;
+      }
+      .image-div{
+        position:relative;
+      }
+      .image-div h3{
+        position:absolute;
+        z-index:1;
+        top:0;
+        height:20px;
+        left:70px;
+        padding:10px;
+        background-color: none;
+      }
+      #deals{
+      margin: 0 14%;
+     
+    }
+    .card-main-container img{
+      width: 100%;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+    .card-container-childgrid{
+      display:grid;
+      position:relative;
+      border-radius: 10px;
+      gap:6px !important;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .card-container-childgrid a{
+      text-decoration: none;
+      color: black;
+      padding-top: 0;
+      border-radius: 10px;
+      font-size: small;
+     
+    }
+    .last-gridcard{
+      position: absolute;
+      bottom:4px;right:4px;
+     
+      /* justify-self: end;
+      align-self: end; */
+    }
+
+
+    .card-content{
+      padding: 0 6px 0 6px;
+    }
+    .genius{
+      background-color: #3647c2;
+      display: inline-block;
+      color: white;
+      padding: 2px;
+      border-radius: 3px;
+    }
+    .last-gridcard del{
+      color: red;
+    }
+    .last-gridcard strong{
+      font-size: medium;
+    }
+    .card-content span{
+      padding:2px;
+      background-color: #3647c2;
+      color: #d4e1f4;
+      border-top-right-radius: 3px;
+    }
+    .guest-child span{
+      padding:2px;
+      background-color: #3647c2;
+      color: #d4e1f4;
+      border-top-right-radius: 3px;
+    }
+    .timedeal{
+     
+      width:fit-content;
+     
+      padding: 0px 3px;
+      background-color: green;
+      color: aliceblue;
+      border-radius: 5px;
+     
+    }
+    .filters {
+      display: flex;
+     
+      gap: 20px;
+      margin: 20px 0;
+    }
+    .filters button {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 10px 15px;
+      border-radius: 20px;
+      font-size: 14px;
+      color: #333;
+      cursor: pointer;
+      transition: background 0.3s ease, color 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .guests-love{
+      margin:0 14%;
+    }
+    .guest-container-grid{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap:20px;
+      padding-top: 0;
+     
+      border-radius: 10px;
+
+
+    }
+    h2+p{
+      color:#333333;
+    }
+    .guest-child{
+      display: flex;
+      flex-direction: column;
+      box-shadow: rgba(25, 25, 35, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      border-radius: 10px;
+      /* height:300px; */
+
+
+    }
+    .guest-child a{
+      text-decoration: none;
+      color: black;
+     
+      padding-top: 0;
+      font-size:smaller;
+    }
+    .guest-child img{
+      width:100%;
+      /* overflow: hidden; */
+      height: auto;
+      border-radius: 10px;
+    }
+    .right-content{
+      align-self: end;
+      justify-self: flex-end;
+      padding: 4px 4px;
+    }
+    .Quick{
+        position: relative;
+        top: 200px;
+    }
+    .quick-grid h3{
+        color: #333333;
+    }
+    .card-content h3{
+        color: #333;
+    }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+<!-- navbar-main -->
+ <div class="header">
+    
+    <div class="nav-sec-1">
+
+        <div style= "color:white; font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; font-size:24px ;font-weight: 700;" id="logo">Booking.com</div>
+
+      </div>
+      <div class="nav-sec-2">
+        <div id="inr" style="font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; font-weight: 600;"> <a>INR</a></div>
+        <div  ><img id="flag" src="https://t-cf.bstatic.com/design-assets/assets/v3.138.1/images-flags/In@3x.png" alt="flag"></div>
+        <div id="qst"> <a><i class="fa-solid fa-question fa-beat"></i></a></div>
+        <div id="List" style="font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; font-weight: 700;"><a >List your property</a></div>
+        <div id="sign-in">
+            <button style="padding: 9px;color: rgb(4, 81, 196);">Register</button>
+            <button style="padding: 9px; color: rgb(4, 81, 196);"> Sign in</button>
+        </div>
+    </div>
+  </div>
+  <div class="navbar-main2">
+    <button style="height:50px;width: 85px;border-radius: 50px;background-color: rgb(47, 114, 214);border:1px solid white;"><i class="fa-solid fa-bed"></i> Stays</button>
+   <button class="nav-button1" style="height:35px;width:85px;border-radius: 50px;background-color:rgb(4, 81, 196);border: none;"><i class="fa-solid fa-plane-departure"></i> Flights</button>
+   <button style=" border:1px solid black ; height:50px; width:120px; border-radius:50px; background-color:rgb(4, 81, 196);border: none;"><i class="fa-solid fa-earth-americas"></i> Flight+hotels</button>
+  <button style="height:35px;width:110px;border-radius: 50px;background-color:rgb(4, 81, 196);border: none;"><i class="fa-solid fa-car"></i> Car rentals </button>
+   
+  <button style="height:35px;width:110px;border-radius: 50px;background-color:rgb(4, 81, 196);border: none;"><i class="fa-solid fa-tower-observation"></i> Attractions</button>
+ <button style="height:35px;width:110px;border-radius: 50px;background-color:rgb(4, 81, 196);border: none;"><i class="fa-solid fa-taxi"></i> Airport taxis</button>
+ </div>
+
+
+ <div class="find">
+  <div class="word"  style="font-family: Blue Sans, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;font-weight: 850; font-size:49px;">Find your next stay</div>
+<div class="word-2" style="font-family: Blue Sans, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;font-weight: 600px; font-size:29px;">Search low prices on hotels,homes and much more...</div>
+</div>
+</div>
+    
+   
+ 
+ 
+    
+
+
+</div>
+<div class="section">
+ 
+    <div class="input">
+        
+        <div id="search">
+        <div id="search-bar-logo" style="position: relative;" ><i class="fa-solid fa-bed"> </i></div>
+        <div id="where"><input style="width: 190px; height: 43px;border: none; position: absolute;left:40px;top:5px" type="search" placeholder="Where are you going?"></div>
+        </div>
+
+        <div style="position: relative;" id="calender">
+          <input type="text" placeholder="Check-in date Check-out date" style="width:179px;height:40px;border:none;padding-left:20px ;">
+        <div style="height:19px; width:15px;bottom: 18px; position: absolute;" id="cal-div"><i class="fa-regular fa-calendar-days"></i></div>
+        </div> 
+        <div id="people">
+          <input type="text" placeholder="2 adults.0 children.1 Room" style="width:179px; height:40px;border:none;padding-left:50px ;">
+          <div style="height:19px; width:15px;bottom: 18px; position: absolute;padding-left:10px;" id="user-div"><i class="fa-regular fa-user"></i></div>
+       
+        </div>
+        <div id="search-button">
+            <button style="padding:15px; width: 100px;height:50px; border-radius: 10px;border: none; background-color:rgb(47, 114, 214) ;">Search</button>
+        </div>
+
+    </div>
+  
+  </div>
+
+
+<div style="display:grid;grid-template-columns: 30px 200px;width: 100px; margin-left: 75px;">
+    <input style="width:23px ;" type="checkbox" name="">
+    <p style="width: 150px;">I'm looking for flights</p>
+</div>
+
+<div style="margin-left: 90px;">
+    <h2>Offers</h2>
+    <p style="font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;">Promotions, deals and special offers for you</p>
+    </div>
+
+    <div style="font-weight: 600;font-family: var(--bui_font_body_2_font-family); width:90%; height: 140px; border: 1px solid black;background-color:whitesmoke; margin-left: 70px; border-radius: 10px;" class="offerimaged-div">
+    <div style="padding-left: 30px;" class="para">
+      <h2>Save on stays Worldwide</h2>
+      <p>Start your year with a sense of adventure,saving 15% or more with Early 2025 deals</p>
+      <button style="background-color:rgb(4, 81, 196); border: none; padding: 10px; border-radius: 10px;">save 15% or more</button>
+  </div>
+    </div>
+<div style="margin-left: 90px;margin-top:110px;">
+  <h2>Trending destinations</h2>
+  <h4 style="color: rgb(152, 158, 164);">Most popular choices for travellers from india</h4>
+</div>
+    <!-- <div class="grid-pic" style=" border:1px solid black; margin-left: 90px;display: grid; ">
+<div style="grid-column: span 3;"><img style="width: 100%; height: 100%; border-radius: 10px;" src="https://cf.bstatic.com/xdata/images/city/600x600/684765.jpg?k=3f7d20034c13ac7686520ac1ccf1621337a1e59860abfd9cbd96f8d66b4fc138&o=" alt="New delhi"> </div>
+<div style="grid-column: span 3;"><img style="width: 440px; height: 280px; border-radius: 10px; padding-left: 30px;" src="https://cf.bstatic.com/xdata/images/city/600x600/684534.jpg?k=d1fe86c22f2433f4e2dda14ddcbe80feb024b0fb30305e5684a1241fba5d4cff&o=" alt="Banglore"></div>
+<div style="grid-column: span 2;"><img style="width:" src="https://cf.bstatic.com/xdata/images/city/600x600/971346.jpg?k=40eeb583a755f2835f4dcb6900cdeba2a46dc9d50e64f2aa04206f5f6fce5671&o=" alt="Mumbai"></div>
+<div style="grid-column: span 2;"><img src="https://cf.bstatic.com/xdata/images/city/600x600/684730.jpg?k=e37b93d88c1fe12e827f10c9d6909a1def7349be2c68df5de885deaa4bc01ee3&o=" alt="Chennai"></div>
+<div style="grid-column: span 2;"><img src="https://cf.bstatic.com/xdata/images/city/600x600/684653.jpg?k=306ccafcc8a4a7e23b9e8a05b183453fe885b312a4daa5ce76ec39a1b79cbc6f&o=" alt="Hyderabad"></div>
+      
+    </div> -->
+
+    <div class="main-destination">
+      <div class="imgg-de">
+          <div style=" grid-column: span 3;" class="imgg-1"><div class="image-div"><img class="inside-deimg" src="https://storytrails.in/wp-content/uploads/2022/01/Blog-featured-image-1-1024x576.jpg"><h3 class="names-des">New Delhi</h3></div></div>
+          <div style=" grid-column: span 3;" class="imgg-2"><div class="image-div"><h3 class="names-des">Banglore</h3><img class="inside-deimg" src="https://cf.bstatic.com/xdata/images/city/600x600/684534.jpg?k=d1fe86c22f2433f4e2dda14ddcbe80feb024b0fb30305e5684a1241fba5d4cff&o="></div></div>
+          <div style=" grid-column: span 2;" class="imgg-3"><div class="image-div"><h3 class="names-des">Mumbai</h3><img class="inside-deimg" src="https://cf.bstatic.com/xdata/images/city/600x600/971346.jpg?k=40eeb583a755f2835f4dcb6900cdeba2a46dc9d50e64f2aa04206f5f6fce5671&o="></div></div>
+          <div style=" grid-column: span 2;"class="imgg-4"><div class="image-div"><h3 class="names-des">Chennai</h3><img class="inside-deimg" src="https://cf.bstatic.com/xdata/images/city/600x600/684730.jpg?k=e37b93d88c1fe12e827f10c9d6909a1def7349be2c68df5de885deaa4bc01ee3&o="></div></div>
+          <div style=" grid-column: span 2;" class="imgg-5"><div class="image-div"><h3 class="names-des">Hydrabad</h3><img class="inside-deimg" src="https://cf.bstatic.com/xdata/images/city/600x600/684653.jpg?k=306ccafcc8a4a7e23b9e8a05b183453fe885b312a4daa5ce76ec39a1b79cbc6f&o="></div></div>
+      </div> 
+  
+
+  
+      <section id="deals">
+
+     
+      </section><br><br>
+      <section class="guests-love">
+        <h2>Homes guests love</h2>
+        <div class="guest-container-grid">
+         
+          <div class="guest-child">
+            <a href="">
+            <div><img src="https://cf.bstatic.com/xdata/images/hotel/square600/531732579.webp?k=df9d17c4371175b0e4a60e390083280c837d5e94dacc7d9ae6db48728b5fb5ff&o=" alt="">
+            </div>
+            <div class="card-content">
+           
+           
+           
+            <h3>Lemon Locke</h3>
+            <p>0.6 hungry,budaspet</p>
+            <div><span>9.0</span>fabulous.804 reviews</div>
+            <p class="right-content"class="last-gridcard">staring from<strong>₹5248</strong></p>
+          </div>
+          </a>
+          </div>
+          <div class="guest-child">
+            <a href="">
+              <div><img src="https://cf.bstatic.com/xdata/images/hotel/square600/13125860.webp?k=35b70a7e8a17a71896996cd55d84f742cd15724c3aebaed0d9b5ba19c53c430b&o=" alt="">
+              </div>
+              <div class="card-content">
+              <h3>Apart Da misto</h3>
+              <p>Tower hamlets United Kingdon,London</p>
+              <div><span>9.0</span>fabulous.804 reviews</div>
+              <p class="right-content"class="last-gridcard">staring from<strong>₹5248</strong></p>
+            </div>
+            </a>
+ 
+          </div>
+          <div class="guest-child">
+            <a href="">
+              <div> <img src="https://cf.bstatic.com/xdata/images/hotel/square600/579099936.webp?k=e04cc7f7fe864ce09b7d7d978dbb7db3e558038a2151eb7c4c11e895bafbd8c0&o=" alt="">
+              </div>
+              <div class="card-content">
+              <h3>7 seasons apartments</h3>
+              <p>old town,poland,krakow</p>
+              <div><span>9.0</span>fabulous.804 reviews</div>
+              <p class="right-content"class="last-gridcard">staring from<strong>₹5248</strong></p>
+            </div>
+            </a>
+          </div>
+          <div class="guest-child">
+            <a href="">
+              <div><img src="https://cf.bstatic.com/xdata/images/hotel/square600/352170812.webp?k=4ff5e29f3ad72c2c9f7170f60a043f01a158f26b38c55e9676439c18f3804179&o=" alt="">
+              </div>
+              <div class="card-content">
+              <h3>numa apartments</h3>
+              <p>Santa Maria novella italy,france</p>
+              <div><span>9.0</span>fabulous.804 reviews</div>
+              <p class="right-content"class="last-gridcard">staring from<strong>₹5248</strong></p>
+            </div>
+            </a>
+          </div>
+ 
+        </div>
+      </section><br><br>
+ 
+      <section class="guests-love">
+        <h2>Stay  at our unique properties</h2>
+        <p>From castles and villas to boat and igloos.We have got it all</p>
+        <div class="guest-container-grid">
+         
+          <div class="guest-child">
+            <a href="">
+            <div><img src="https://cf.bstatic.com/xdata/images/hotel/square600/132452060.webp?k=f9cd3042175e0da40abf6d3988b9f3ac91aaeaefd9941081dbadfd0875c8ab27&o=" alt="">
+            </div>
+            <div class="card-content">
+           
+           
+           
+            <h3>Lemon Locke</h3>
+            <p>0.6 hungry,budaspet</p>
+            <div><span>9.0</span>fabulous.804 reviews</div>
+            <p class="right-content"class="last-gridcard">staring from<strong>₹5248</strong></p>
+          </div>
+          </a>
+          </div>
+          <div class="guest-child">
+            <a href="">
+              <div><img src="https://cf.bstatic.com/xdata/images/hotel/square600/187855604.webp?k=0abbcd2115938850aa3372f4e7bf847f2aeb9579d674ec40ff273230a840eb9d&o=" alt="">
+              </div>
+              <div class="card-content">
+              <h3>Apart Da misto</h3>
+              <p>Tower hamlets United Kingdon,London</p>
+              <div><span>9.0</span>fabulous.804 reviews</div>
+              <p class="right-content"class="last-gridcard">staring from <strong>₹5248</strong></p>
+            </div>
+            </a>
+ 
+          </div>
+          <div class="guest-child">
+            <a href="">
+              <div> <img src="https://cf.bstatic.com/xdata/images/hotel/square600/126764303.webp?k=46a8a949ef420510834df06d0d88e293fbaae80cd1e17883cb78c1bba3eb0366&o=" alt="">
+              </div>
+              <div class="card-content">
+              <h3>7 seasons apartments</h3>
+              <p>old town,poland,krakow</p>
+              <div><span>9.0</span>fabulous.804 reviews</div>
+              <p class="right-content"class="last-gridcard">staring from<strong>₹5248</strong></p>
+            </div>
+            </a>
+          </div>
+          <div class="guest-child">
+            <a href="">
+              <div><img src="https://cf.bstatic.com/xdata/images/hotel/square600/154543781.webp?k=847c6d1ffe92003d2d7c9cf7043c6acda1c550e6f0c7c981370a6303f12a10cf&o=" alt="">
+              </div>
+              <div class="card-content">
+              <h3>numa apartments</h3>
+              <p>Santa Maria novella italy,france</p>
+              <div><span>9.0</span>fabulous.804 reviews</div>
+              <p class="right-content"class="last-gridcard">staring from<strong>₹5248</strong></p>
+            </div>
+            </a>
+          </div>
+ 
+        </div>
+      </section><br><br>
+
+
+       
+</section>  
+     
+   
+  </body>
+</html>
